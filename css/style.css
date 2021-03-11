@@ -25,7 +25,8 @@ img{
 }
 /* 로고 */
 .brand{
-  display: flex; center;
+  display: flex;
+  justify-content: center;
   padding: 70px 0 35px;
 }
 .brand a{
