@@ -42,43 +42,65 @@ img{
   padding: 0 15px;
 }
 .login-form fieldset{
-  background: pink;
   display: flex;
   flex-wrap: wrap;
 }
 .user-id{
-  background: salmon;
   width: 100%;
+  margin-bottom: 8px;
 }
 .user-pw{
-  background: skyblue;
   width: 100%;
+  margin-bottom: 14px;
 }
 .keep-login{
   background: blueviolet;
   width: 50%;
   order: 1;
+  margin-bottom: 14px;
 }
 .ip-security{
   background: lightgreen;
   width: 50%;
   order: 1;
   display: none;
+  margin-bottom: 14px;
 }
 .button-login{
-  background: yellow;
   width: 100%;
+  margin-bottom: 14px;
 }
 /* 입력서식 - input */
 .input{
   width: 100%;
   padding: 14px 14px 13px 14px;
+  font-size: 14px;
+  line-height: 21px;
+  border-radius: 0px;
 }
 .input-normal{
   border: 1px solid #dadada;
   color: #999;
 }
-
+.error-massage{
+  display: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ff1414;
+  padding: 8px 0;
+}
+/* 버튼 - button */
+.button{
+  width: 100%;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 16px 0;
+  border-radius: 0;
+}
+.button-primary{
+  background: #03c75a;
+  color: #fff;
+}
 @media screen and (min-width: 769px){
   .brand a {
     padding: 106px 0 53px;
