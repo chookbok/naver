@@ -58,7 +58,6 @@ a{
   margin-bottom: 14px;
 }
 .keep-login{
-  background: blueviolet;
   width: 50%;
   order: 1;
   margin-bottom: 14px;
@@ -109,10 +108,10 @@ a{
   color: #333;
 }
 /* IP 보안 */
-.ip-security-toggle{
+.ip-security-toggle, .keep-login{
   position: relative;
 }
-.ip-security-toggle .checkbox{
+.ip-security-toggle .checkbox, .keep-login .checkbox{
   position: absolute;
   top: 0;
   left: 0;
@@ -131,6 +130,21 @@ a{
 .ip-security-state.is-on,
 .checkbox:checked + .ip-security-state {
   color: #03c75a;
+}
+/* 로그인 상태 유지 */
+.keep-login label{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.keep-login .checkbox-toggle-bg{
+  width: 24px;
+  height: 24px;
+  margin-right: 4px;
+  background: url(../images/uncheck.svg) no-repeat 50% 50% /cover;
+}
+.keep-login .checkbox:checked + label .checkbox-toggle-bg{
+  background-image: url(../images/check.svg);
 }
 @media screen and (min-width: 769px){
   .brand a {
